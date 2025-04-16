@@ -52,28 +52,12 @@ const Navbar = () => {
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink
-              href="#about"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              About
-            </MobileLink>
-            <MobileLink
               href="#event"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
-              Skills
-            </MobileLink>
-            <MobileLink
-              href="#experience"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Experience
+              Event Overview
             </MobileLink>
             <MobileLink
               href="#projects"
@@ -89,20 +73,16 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Education
+              Agenda
             </MobileLink>
-            <GitHubButton
-              style={{
-                padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
+            <MobileLink
+              href="#event"
+              onClick={() => {
+                setIsOpen(!isOpen);
               }}
-              href={Bio.github}
-              target="_blank"
             >
-              Github Profile
-            </GitHubButton>
+              Event Overview
+            </MobileLink>
           </MobileMenu>
         )}
       </NavbarContainer>
