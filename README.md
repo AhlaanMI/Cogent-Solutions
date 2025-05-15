@@ -2,6 +2,8 @@
 
 This project is a modern and responsive landing page developed for **Cogent Solutions**. It integrates both frontend and backend technologies to deliver an efficient and visually appealing user experience.
 
+https://cogentsolutions.vercel.app/
+
 ---
 
 ## 🛠️ Technologies Used
